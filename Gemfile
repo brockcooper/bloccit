@@ -19,6 +19,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
  
  group :development do
    gem 'sqlite3'
+   gem 'rails-erd', github: 'ready4god2513/rails-erd', branch: 'rails-4.2-support-fix'
  end
 
 
