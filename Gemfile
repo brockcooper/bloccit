@@ -7,12 +7,16 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'faker'
+gem 'devise'
 gem 'awesome_print'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
-gem 'sdoc', '~> 0.4.0', group: :doc
 
+
+group :doc do
+  gem 'sdoc', require: false
+end
 
  group :production do
    gem 'pg'
