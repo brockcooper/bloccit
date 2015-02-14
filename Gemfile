@@ -12,6 +12,7 @@ gem 'awesome_print'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
+gem 'figaro'
 
 
 group :doc do
