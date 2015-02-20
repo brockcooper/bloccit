@@ -12,7 +12,7 @@ gem 'awesome_print'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
-gem 'figaro'
+gem 'figaro', '1.0'
 gem 'pundit'
 
 
