@@ -29,7 +29,7 @@ module ApplicationHelper
     else
       voted = ''
     end
-    "glyphicon glyphicon-chevron-up #{voted}"
+    "glyphicon glyphicon-chevron-down #{voted}"
   end
 
 end

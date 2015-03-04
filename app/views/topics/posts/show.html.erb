@@ -27,9 +27,7 @@
   </div>
 </div>
 
-<% @comments.each do |c| %>
-  <%= render({ partial: 'comments/comment', locals: {comment: c} }) %>
-<% end %>
+<%= render partial: 'comments/comment', collection: @comments %>
 <% if current_user %>
 <%= render partial: 'comments/form', locals: { topic: @topic, post: @post,  comment: @post.comments.new } %>
 <% end %>
