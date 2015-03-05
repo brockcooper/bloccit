@@ -19,7 +19,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
 gem 'will_paginate', '~> 3.0.5'
-gem 'puma'
+
 
 group :doc do
   gem 'sdoc', require: false
@@ -28,9 +28,11 @@ end
  group :production do
    gem 'pg'
    gem 'rails_12factor'
+   gem 'puma'
  end
  
  group :development do
+   gem 'thin'
    gem 'sqlite3'
    gem 'rails-erd', github: 'ready4god2513/rails-erd', branch: 'rails-4.2-support-fix'
  end
