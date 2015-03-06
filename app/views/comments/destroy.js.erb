@@ -1,0 +1,7 @@
+<% if @comment.destroyed? %>
+    $('#comment-' +<%= @comment.id %>).fadeOut(2000);
+    $('.js-comments-count').html("<%= pluralize(@comment.user.comments.count, 'comment') %>");
+    $('#comment-' +<%= @comment.id %>).prepend("<div class='alert alert-success'><%= @message %></div>");
+ <% else %>
+   $('#comment-' +<%= @comment.id %>).prepend("<div class='alert alert-danger'><%= @message %></div>");
+ <% end %>
