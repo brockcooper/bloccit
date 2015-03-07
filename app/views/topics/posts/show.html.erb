@@ -27,7 +27,12 @@
   </div>
 </div>
 
-<%= render partial: 'comments/comment', collection: @comments %>
+<h2>Comments</h2>
+  <div class='js-comments'>
+  <%= render partial: 'comments/comment', collection: @comments %>
+  </div>
 <% if current_user %>
-<%= render partial: 'comments/form', locals: { topic: @topic, post: @post,  comment: @post.comments.new } %>
+  <div class='new-comment'>
+    <%= render partial: 'comments/form', locals: { topic: @topic, post: @post,  comment: @post.comments.new } %>
+  </div>
 <% end %>
