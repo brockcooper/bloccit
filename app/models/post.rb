@@ -13,6 +13,8 @@ class Post < ActiveRecord::Base
   validates :topic, presence: true
   validates :user, presence: true
 
+  mount_uploader :image, ImageUploader
+  
   def up_votes
    votes.where(value: 1).count
   end
